@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "${forge_version_range}"
+license = "MIT"
+#issueTrackerURL=""
+#clientSideOnly=true
+
+[[mods]]
+modId = "crossstitch"
+version = "${mod_version}"
+displayName = "CrossStitch"
+#updateJSONURL=""
+displayURL = "https://velocitypowered.com"
+logoFile="icon.png"
+#credits=""
+authors = "Andrew Steinborn, Velocity Contributors"
+#displayTest="MATCH_VERSION"
+
+description = '''
+A Fabric mod that provides enhanced support for Minecraft proxies.
+'''
+
+[[dependencies.crossstitch]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.crossstitch]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[${minecraft_version}]"
+ordering = "NONE"
+side = "BOTH"
